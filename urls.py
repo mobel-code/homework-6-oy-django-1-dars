@@ -39,22 +39,22 @@ from django.urls import path
 
 
 def view1(request: HttpRequest):
-    return HttpResponse('<h1 style="color: green;" >Hello my first view</h1>')
+    return HttpResponse('<h1 style="color: green;"><ol> Hello my first view </h1></ol>')
 
 def view2(request: HttpRequest):
-    return HttpResponse('<h2 style="color: blue;" >Hello my seconf view</h2>')
+    return HttpResponse('<h2 style="color: blue;"><ol> Hello my seconf view </h2></ol>')
 
 def view3(request: HttpRequest):
-    return HttpResponse('<h3 style="color: red;" >Hello my third view</h3>')
+    return HttpResponse('<h3 style="color: red;"><ol> Hello my third view </h3></ol>')
 
 def view4(request: HttpRequest):
-    return HttpResponse('<h4 style="color: purple;" >Hello my fours view</h4>')
+    return HttpResponse('<h4 style="color: purple;"><ol> Hello my fours view </h4></ol>')
 
 def view5(request: HttpRequest):
-    return HttpResponse('<h5 style="color: black;" >Hello my fiveth view</h5>')
+    return HttpResponse('<h5 style="color: black;"><ol> Hello my fiveth view </h5></ol>')
 
 def view6(request: HttpRequest):
-    return HttpResponse('<h6 style="color: pink;" >Hello my sixth view</h6>')
+    return HttpResponse('<h6 style="color: pink;"><ol> Hello my sixth view </h6></ol>')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
